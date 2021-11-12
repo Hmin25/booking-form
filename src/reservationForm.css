@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.mt-auto {
+  margin-top: 15vh !important;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reserveForm {
+  background-color: #dbe2ef;
+  border-radius: 15px;
+  height: 100%;
+  width: 40%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-fluid {
+  width: 70%;
+  height: 100%;
+}
+
+.headerText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #112d4e;
+  font-size: 15pt;
+}
+
+.titleText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #112d4e;
+  font-size: 11pt;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.form-control {
+  border-radius: 8px;
+  border-color: transparent;
+  color: #f9f7f7;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0 none;
+}
+
+.form-control:hover {
+  color: #dbe2ef;
+  opacity: 80%;
+}
+
+.input::-webkit-input-placeholder {
+  color: red;
+  opacity: 50%;
+}
+
+.input:-ms-input-placeholder {
+  color: red;
+  opacity: 50%;
+}
+
+.input::-ms-input-placeholder {
+  color: red;
+  opacity: 50%;
+}
+
+.input::placeholder {
+  color: red;
+  opacity: 50%;
+}
+
+@media (min-width: 100px) and (max-width: 300px) {
+  .reserveForm {
+    width: 80%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  .logoContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .img-fluid {
+    width: 18%;
+    height: 80%;
+  }
+  .headerText {
+    font-size: 11pt;
+    margin-top: 17px;
+    margin-left: 17px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 353px) {
+  .reserveForm {
+    width: 80%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  .logoContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .img-fluid {
+    width: 18%;
+    height: 100%;
+  }
+  .headerText {
+    font-size: 12pt;
+    margin-top: 17px;
+    margin-left: 17px;
+  }
+}
+
+@media (min-width: 354px) and (max-width: 500px) {
+  .reserveForm {
+    width: 80%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  .logoContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .img-fluid {
+    width: 18%;
+    height: 100%;
+  }
+  .headerText {
+    font-size: 13pt;
+    margin-top: 17px;
+    margin-left: 17px;
+  }
+}
+/*# sourceMappingURL=reservationForm.css.map */
