@@ -1,0 +1,31 @@
+.keyMap {
+  width: 50vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.dropDownForKeyMap {
+  border-color: #112d4e;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  // color: "#bdcce7";
+}
+
+.dropDownForKeyMap:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.dropDownForKeyMap:focus {
+  border-color: #abedd8;
+}
+
+.unitStatusText {
+  font-weight: 500;
+}
+
+.keyMapImg {
+  width: 100%;
+  height: 600px;
+}

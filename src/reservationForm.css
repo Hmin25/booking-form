@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .mt-auto {
-  margin-top: 15vh !important;
+  margin-top: 10vh !important;
   border-radius: 10px;
   height: 100%;
   width: 100%;
@@ -8,6 +8,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10vh !important;
 }
 
 .reserveForm {
@@ -93,6 +94,41 @@
   opacity: 50%;
 }
 
+.submitButton {
+  border-radius: 5px;
+  border-width: 0ch;
+  border-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 10pt;
+  background-color: #112d4e;
+  color: #dbe2ef;
+  width: 35%;
+  height: 4vh;
+  margin-bottom: 5%;
+}
+
+.submitButton:hover {
+  background-color: #abedd8;
+  color: #112d4e;
+}
+
+.dropDownBar {
+  border-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+}
+
+.dropDownBar:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.dropDownBar:focus {
+  border-color: #abedd8;
+}
+
 @media (min-width: 100px) and (max-width: 300px) {
   .reserveForm {
     width: 80%;
@@ -171,6 +207,36 @@
     font-size: 13pt;
     margin-top: 17px;
     margin-left: 17px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .reserveForm {
+    width: 80%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+  .reserveForm {
+    max-width: 40%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .reserveForm {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .reserveForm {
+    max-width: 40%;
   }
 }
 /*# sourceMappingURL=reservationForm.css.map */
