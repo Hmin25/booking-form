@@ -70,6 +70,7 @@
   background-color: #dbe2ef;
   border-color: #112d4e;
   height: 4vh;
+  min-height: 35px;
   margin: 3%;
   text-align: center;
   width: auto;
@@ -87,6 +88,7 @@
   border-color: transparent;
   width: 100%;
   height: 4vh;
+  min-height: 35px;
   padding: 6px;
   background-color: #dbe2ef;
   font-size: 0.8vw;
@@ -119,6 +121,7 @@
   color: #dbe2ef;
   width: 35%;
   height: 4vh;
+  min-height: 35px;
   margin-bottom: 5%;
 }
 
@@ -127,7 +130,89 @@
   color: #112d4e;
 }
 
-@media (min-width: 354px) and (max-width: 500px) {
+@media (min-width: 100px) and (max-width: 300px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 35%;
+    padding-right: 40%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 250px;
+  }
+  .eachLevel {
+    font-size: 3.8vw;
+    height: 4vh;
+  }
+  .proceedReserveButton {
+    width: 50%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 353px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 35%;
+    padding-right: 40%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 270px;
+  }
+  .eachLevel {
+    font-size: 3.8vw;
+    height: 4vh;
+  }
+  .proceedReserveButton {
+    width: 50%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 354px) and (max-width: 449px) {
   .keyMap {
     width: 100vw;
     height: 100vh;
@@ -163,6 +248,407 @@
   .proceedReserveButton {
     width: 42%;
     height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 500px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 38%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 350px;
+  }
+  .eachLevel {
+    font-size: 3.5vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 380px;
+  }
+  .eachLevel {
+    font-size: 3vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 420px;
+  }
+  .eachLevel {
+    font-size: 2.7vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 480px;
+  }
+  .eachLevel {
+    font-size: 2.4vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 530px;
+  }
+  .eachLevel {
+    font-size: 2.2vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 580px;
+  }
+  .eachLevel {
+    font-size: 2.2vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1180px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 700px;
+  }
+  .eachLevel {
+    font-size: 2.2vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 1181px) and (max-width: 1280px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 780px;
+  }
+  .eachLevel {
+    font-size: 1.5vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1400px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 830px;
+  }
+  .eachLevel {
+    font-size: 1.5vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+  .checkUnitStatus {
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 42%;
+    padding-right: 38%;
+  }
+  .keyMapImg {
+    width: 100%;
+    height: 900px;
+  }
+  .eachLevel {
+    font-size: 1.5vw;
+  }
+  .proceedReserveButton {
+    width: 42%;
+    height: 5vh;
+    min-height: 42px;
   }
 }
 /*# sourceMappingURL=keymap.css.map */

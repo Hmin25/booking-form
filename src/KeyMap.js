@@ -8,7 +8,7 @@ export default function KeyMap() {
 
   return (
     <>
-      <div className="d-flex justify-content-center mt-5">
+      <div className="d-flex justify-content-center mt-5 overflow-hidden">
         <div className="keyMap">
           {/* First row */}
           <div>
