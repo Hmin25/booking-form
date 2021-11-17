@@ -1,10 +1,61 @@
 import "./keymap.css";
 import Keymap from "../src/Assets/keymap.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DropDownForKeyMap from "./Components/DropDownForKeyMap";
 
 export default function KeyMap() {
+  const [isClicked, setIsClicked] = useState(false);
+
   const testingData = ["1hour", "2hours", "3hour"];
+  const levelTestingData = [
+    "Level 1",
+    "Level 2",
+    "Level 3",
+    "Level 4",
+    "Level 5",
+  ];
+
+  const [testLevelFlags, setTestLevelFlags] = useState(null);
+
+  useEffect(() => {
+    let isClickedFullObject = {};
+    for (let i = 0; i < levelTestingData.length; i++) {
+      let key = levelTestingData[i];
+      let defaultFlag = false;
+      isClickedFullObject[key] = defaultFlag;
+    }
+    console.log("isClickedFullObject ", isClickedFullObject);
+    setTestLevelFlags({ ...isClickedFullObject });
+  }, []);
+
+  const levelsData = () => {
+    if (levelTestingData.length > 0 && testLevelFlags) {
+      return levelTestingData.map((level, index) => (
+        <button
+          className="eachLevel"
+          onClick={() => {
+            // setIsClicked(true);
+            // console.log("IsClicked", isClicked);
+            // setTestLevelFlags({...testLevelFlags});
+            let key = level;
+            let isClickedFlag = true;
+            let newObject = {};
+            newObject[key] = isClickedFlag;
+
+            setTestLevelFlags({ ...testLevelFlags, ...newObject });
+          }}
+          style={{
+            backgroundColor: testLevelFlags[level] === true ? "#112d4e" : null,
+            color: testLevelFlags[level] === true ? "#dbe2ef" : null,
+            fontWeight: testLevelFlags[level] === true ? "500" : null,
+          }}
+          key={index}
+        >
+          {level}
+        </button>
+      ));
+    }
+  };
 
   return (
     <>
@@ -34,11 +85,7 @@ export default function KeyMap() {
           {/* Third Row - Every single level */}
           <div className="levelsDisplayContainer">
             <div className="levelsDisplayBar">
-              <button className="eachLevel" onClick={() => console.log("heyhey")}>Level 1</button>
-              {/* <button className="eachLevel" onClick={() => style={backgroundColor: "red"}}>Level 2</button> */}
-              <button className="eachLevel">Level 3</button>
-              <button className="eachLevel">Level 4</button>
-              <button className="eachLevel">Level 5</button>
+              {levelTestingData && levelsData()}
             </div>
           </div>
 
