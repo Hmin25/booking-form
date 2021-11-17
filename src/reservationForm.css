@@ -55,6 +55,7 @@
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
+  padding-right: 5px;
 }
 
 .form-control {
@@ -72,26 +73,6 @@
 .form-control:hover {
   color: #dbe2ef;
   opacity: 80%;
-}
-
-.input::-webkit-input-placeholder {
-  color: red;
-  opacity: 50%;
-}
-
-.input:-ms-input-placeholder {
-  color: red;
-  opacity: 50%;
-}
-
-.input::-ms-input-placeholder {
-  color: red;
-  opacity: 50%;
-}
-
-.input::placeholder {
-  color: red;
-  opacity: 50%;
 }
 
 .submitButton {

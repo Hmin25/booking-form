@@ -4,6 +4,15 @@
   overflow-y: hidden;
 }
 
+.keyMapTitleText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #112d4e;
+  font-size: 11pt;
+  justify-content: baseline;
+  padding-right: 5px;
+}
+
 .dropDownForKeyMap {
   border-color: #112d4e;
   border-radius: 5px;
@@ -21,11 +30,155 @@
   border-color: #abedd8;
 }
 
-.unitStatusText {
+.checkUnitStatus {
+  display: flex; //in mobile change to block
+  align-items: baseline;
+}
+
+.unitStatusTextAvailable {
   font-weight: 500;
+  padding-left: 10px;
+  color: #00e500;
+}
+
+.unitStatusTextReserved {
+  font-weight: 500;
+  padding-left: 10px;
+  color: #ffa400;
+}
+
+.unitStatusTextBooked {
+  font-weight: 500;
+  padding-left: 10px;
+  color: #f20c00;
 }
 
 .keyMapImg {
   width: 100%;
   height: 600px;
+  min-width: 100%;
+  min-height: 250px;
+}
+
+.levelsDisplayContainer{
+  border-radius: 10px;
+  background-color: #dbe2ef;
+  border-color: #112d4e;
+  height: 4vh;
+  margin: 3%;
+  text-align: center;
+  width: auto;
+}
+
+.levelsDisplayBar{
+  display: flex;
+}
+
+.eachLevel{
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: transparent;
+  width: 100%;
+  height: 4vh;
+  padding: 6px;
+  background-color: #dbe2ef;
+  font-size: 0.8vw;
+}
+
+.eachLevel:hover{
+  border-color: #112d4e;
+  font-weight: 500; 
+  background-color: #112d4e;
+  color: #dbe2ef;
+  border-radius: 10px;
+}
+
+.eachLevel:focus{
+  border-color: #112d4e;
+  font-weight: 500; 
+  background-color: #112d4e;
+  color: #dbe2ef;
+  border-radius: 10px;
+}
+
+.proceedReserveButton{
+  border-radius: 5px;
+  border-width: 0ch;
+  border-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 10pt;
+  background-color: #112d4e;
+  color: #dbe2ef;
+  width: 35%;
+  height: 4vh;
+  margin-bottom: 5%;
+}
+
+.proceedReserveButton:hover {
+  background-color: #abedd8;
+  color: #112d4e;
+}
+
+
+//Mobile View
+@media (min-width: 100px) and (max-width: 300px) {
+}
+
+@media (min-width: 301px) and (max-width: 353px) {
+}
+
+@media (min-width: 354px) and (max-width: 500px) {
+  .keyMap {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .keyMapTitleText {
+    padding-right: 0px;
+  }
+
+  .checkUnitStatus {
+    display: block;
+    align-items: baseline;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .unitStatusTextAvailable,
+  .unitStatusTextBooked,
+  .unitStatusTextReserved {
+    margin-top: 5px;
+    padding-left: 38%;
+    padding-right: 38%;
+  }
+  
+  .keyMapImg {
+    width: 100%;
+    height: 300px;
+  }
+
+  .eachLevel{
+    font-size: 3.5vw;
+  }
+
+  .proceedReserveButton{
+    width: 42%;
+    height: 5vh;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
 }

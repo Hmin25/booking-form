@@ -2,7 +2,7 @@ const DropDownBar = ({ placeholder, title, optionData }) => {
   const options = () => {
     if (optionData.length > 0) {
       return optionData.map((options, index) => (
-        <option value="1">{options}</option>
+        <option value={options}>{options}</option>
       ));
     }
   };
@@ -11,7 +11,9 @@ const DropDownBar = ({ placeholder, title, optionData }) => {
     <>
       <div className="col-sm">
         <span className="titleText">{title}</span>
-        <select className="dropDownBar" required>
+        <select className="dropDownBar" onChange={(e) => 
+            e.target.value
+          } required>
           <option selected hidden>
             {placeholder}
           </option>

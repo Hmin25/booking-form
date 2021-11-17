@@ -56,6 +56,7 @@ export default function ReservationForm() {
             </div>
 
             <div className="row mt-3 mx-3">
+              <DropDownBar placeholder="Please select a level" title="Level no." optionData={testingData}/>
               <DropDownBar placeholder="Please select an unit" title="Unit no." optionData={testingData}/>
             </div>
           </div>
