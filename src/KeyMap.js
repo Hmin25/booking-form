@@ -16,6 +16,7 @@ export default function KeyMap() {
   ];
 
   const [testLevelFlags, setTestLevelFlags] = useState(null);
+  const [testNewLevelFlags, setTestNewLevelFlags] = useState(null);
 
   useEffect(() => {
     let isClickedFullObject = {};
@@ -41,13 +42,12 @@ export default function KeyMap() {
             let isClickedFlag = true;
             let newObject = {};
             newObject[key] = isClickedFlag;
-
-            setTestLevelFlags({ ...testLevelFlags, ...newObject });
+            setTestNewLevelFlags({ ...testLevelFlags, ...newObject });
           }}
           style={{
-            backgroundColor: testLevelFlags[level] === true ? "#112d4e" : null,
-            color: testLevelFlags[level] === true ? "#dbe2ef" : null,
-            fontWeight: testLevelFlags[level] === true ? "500" : null,
+            backgroundColor: testNewLevelFlags && testNewLevelFlags[level] === true ? "#112d4e" : null,
+            color: testNewLevelFlags && testNewLevelFlags[level] === true ? "#dbe2ef" : null,
+            fontWeight: testNewLevelFlags && testNewLevelFlags[level] === true ? "500" : null,
           }}
           key={index}
         >
