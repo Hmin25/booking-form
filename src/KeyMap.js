@@ -5,6 +5,7 @@ import DropDownForKeyMap from "./Components/DropDownForKeyMap";
 
 export default function KeyMap() {
   const [isClicked, setIsClicked] = useState(false);
+  const [defaultFlagForLevelButton, setDefaultFlagForLevelButton] = useState(null);
 
   const testingData = ["1hour", "2hours", "3hour"];
   const levelTestingData = [
@@ -15,39 +16,38 @@ export default function KeyMap() {
     "Level 5",
   ];
 
-  const [testLevelFlags, setTestLevelFlags] = useState(null);
-  const [testNewLevelFlags, setTestNewLevelFlags] = useState(null);
 
+  //create a new object contains LevelsData with default flag(false)
   useEffect(() => {
     let isClickedFullObject = {};
+
     for (let i = 0; i < levelTestingData.length; i++) {
       let key = levelTestingData[i];
       let defaultFlag = false;
       isClickedFullObject[key] = defaultFlag;
     }
-    console.log("isClickedFullObject ", isClickedFullObject);
-    setTestLevelFlags({ ...isClickedFullObject });
+    setDefaultFlagForLevelButton({ ...isClickedFullObject });
   }, []);
 
   const levelsData = () => {
-    if (levelTestingData.length > 0 && testLevelFlags) {
+    if (levelTestingData.length > 0 && defaultFlagForLevelButton) {
       return levelTestingData.map((level, index) => (
         <button
           className="eachLevel"
           onClick={() => {
-            // setIsClicked(true);
-            // console.log("IsClicked", isClicked);
-            // setTestLevelFlags({...testLevelFlags});
             let key = level;
             let isClickedFlag = true;
             let newObject = {};
             newObject[key] = isClickedFlag;
-            setTestNewLevelFlags({ ...testLevelFlags, ...newObject });
+
+            //set a new object with only ONE true flag in it
+            setIsClicked({ ...defaultFlagForLevelButton, ...newObject });
           }}
           style={{
-            backgroundColor: testNewLevelFlags && testNewLevelFlags[level] === true ? "#112d4e" : null,
-            color: testNewLevelFlags && testNewLevelFlags[level] === true ? "#dbe2ef" : null,
-            fontWeight: testNewLevelFlags && testNewLevelFlags[level] === true ? "500" : null,
+            backgroundColor:
+              isClicked && isClicked[level] === true ? "#112d4e" : null,
+            color: isClicked && isClicked[level] === true ? "#dbe2ef" : null,
+            fontWeight: isClicked && isClicked[level] === true ? "500" : null,
           }}
           key={index}
         >
