@@ -1,13 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .mt-auto {
-  margin-top: 10vh !important;
+  margin-top: 1vh !important;
   border-radius: 10px;
   height: 100%;
   width: 100%;
   overflow-y: hidden;
   justify-content: center;
   margin-bottom: 10vh !important;
+}
+
+.phoneInput{
+  background-color: #f9f7f7;
+  border-radius: 8px;
+  border-color: transparent;
+  height: 40px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.PhoneInput input{
+  border-color: transparent;
+  background-color: transparent;
+}
+
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: transparent;
+  justify-content: center;
+  width: 40%; //60% for mobile
+  margin-top: 2vh !important;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 10pt;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
 }
 
 .reserveForm {
@@ -49,7 +96,6 @@
 .form-control {
   border-radius: 8px;
   border-color: transparent;
-  color: #f9f7f7;
 }
 
 .form-control:focus {
@@ -100,6 +146,15 @@
 
 //Mobile View
 @media (min-width: 100px) and (max-width: 300px) {
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: transparent;
+    justify-content: center;
+    width: 80%;
+    margin-top: 2vh !important;
+  }
+
   .reserveForm {
     width: 80%;
     min-width: fit-content;
@@ -123,6 +178,15 @@
 }
 
 @media (min-width: 301px) and (max-width: 353px) {
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: transparent;
+    justify-content: center;
+    width: 60%;
+    margin-top: 2vh !important;
+  }
+
   .reserveForm {
     width: 80%;
     min-width: fit-content;
@@ -146,6 +210,15 @@
 }
 
 @media (min-width: 354px) and (max-width: 500px) {
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: transparent;
+    justify-content: center;
+    width: 60%;
+    margin-top: 2vh !important;
+  }
+
   .reserveForm {
     width: 80%;
     min-width: fit-content;
@@ -169,6 +242,15 @@
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: transparent;
+    justify-content: center;
+    width: 40%;
+    margin-top: 2vh !important;
+  }
+
   .reserveForm {
     width: 80%;
     min-width: fit-content;
