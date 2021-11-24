@@ -20,7 +20,7 @@ export default function ReservationForm() {
     return (
       <div>
         <ReactPhoneInput
-          international={true}
+          // international={true} // directly show country code on input bar
           placeholder="eg: 016-12345467"
           defaultCountry={"MY"}
           value={phoneNumber}
@@ -32,7 +32,7 @@ export default function ReservationForm() {
       </div>
     );
   };
-  console.log(phoneNumber)
+  // console.log(phoneNumber)
 
   return (
     <>

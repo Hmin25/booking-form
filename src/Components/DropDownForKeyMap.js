@@ -2,7 +2,7 @@ const DropDownForKeyMap = ({ placeholder, title, optionData }) => {
   const options = () => {
     if (optionData.length > 0) {
       return optionData.map((options, index) => (
-        <option value={options}>{options}</option>
+        <option value={options} key={index}>{options}</option>
       ));
     }
   };
